@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.scuwangjun.fsapp.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/home_testlogin"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+
+        </View>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Welcome To FangSuo"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <ImageButton
+            android:id="@+id/home_home2"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="@color/transpant"
+            android:src="@mipmap/menu" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/home_background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scuwangjun.utils.RadarScanView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/home_wendu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="室内温度："
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/home_guangdu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/home_wendu"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="室内光度："
+            android:textColor="@color/gray"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
